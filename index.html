@@ -6,12 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-    <div><h1 id="score">0</h1></div>
-    <canvas width="600px" height="600px" id="campoJogo"></canvas>
-
+    <div>Adversário</div>
+    <div class="escolhaRobo escolha"></div>
+    <div class="versus">X</div>
+    
+    <div class="minhaEscolha escolha">
+        <button class="pedra" onclick="escolha(0)">Pedra</button>
+        <button class="papel" onclick="escolha(1)">Papel</button>
+        <button class="tesoura" onclick="escolha(2)">Tesoura</button>
+    </div>
+    <div>Eu</div>
+        <hr>
+        <button onclick="start()">Jogar</button>
     <script src="script.js"></script>
 </body>
 
