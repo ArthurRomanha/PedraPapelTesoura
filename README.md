@@ -1,1 +1,1 @@
-# Snake-Game
+# Rock - Paper - Scizor
