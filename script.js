@@ -10,13 +10,16 @@ const sorteiaEscolhaRobo = () => {
     
     switch (num) {
         case 0:
-            minhaEscolha = "pedra";
+            escolhaRobo = "pedra";
+            console.log(escolhaRobo);
             break;
         case 1:
-            minhaEscolha = "papel";
+            escolhaRobo = "papel";
+            console.log(escolhaRobo);
             break;
         case 2:
-            minhaEscolha = "tesoura";
+            escolhaRobo = "tesoura";
+            console.log(escolhaRobo);
             break;
     }
 }
@@ -33,5 +36,11 @@ const verificaVitória = () => {
 const start = () => {
     minhaEscolha()
     sorteiaEscolhaRobo();
-    verificaVitória();
+    let resultado = verificaVitória();
+    if (resultado) {
+        console.log("ganhou");
+    }else{
+        console.log("perdeu");
+        
+    }
 }
