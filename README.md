@@ -1,1 +1,1 @@
-# Rock - Paper - Scizor
+# Rock - Paper - Scissors
