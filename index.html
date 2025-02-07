@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <div>Adversário</div>
+    <div class="player"><img src="img/user.png" alt="user image"><h2>Adversário</h2></div>
     <div class="escolhaRobo escolha"></div>
-    <div class="versus">X</div>
-    
-    <div class="minhaEscolha escolha">
-        <button class="pedra" onclick="escolha(0)">Pedra</button>
-        <button class="papel" onclick="escolha(1)">Papel</button>
-        <button class="tesoura" onclick="escolha(2)">Tesoura</button>
-    </div>
-    <div>Eu</div>
-        <hr>
-        <button onclick="start()">Jogar</button>
+    <div class="versus">VS</div>
+
+    <form class="minhaEscolha">
+        <div><input type="radio" class="pedra" name="elemento" value="Pedra"><label for="pedra">Rock</label></div>
+        <div><input type="radio" class="papel" name="elemento" value="Papel"><label for="papel">Paper</label></div>
+        <div><input type="radio" class="tesoura" name="elemento" value="Tesoura"><label for="tesoura">Scissor</label></div>
+    </form>
+    <div class="player"><img src="img/user.png" alt="user image"><h2>Eu</h2></div>
+    <hr>
+    <button onclick="start()" class="play">Jogar</button>
     <script src="script.js"></script>
 </body>
 

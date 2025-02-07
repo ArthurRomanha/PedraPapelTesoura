@@ -1,8 +1,39 @@
 body{
     color: rgb(0, 0, 0);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
-
+.player{
+    grid-column: 2/5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.escolhaRobo{
+    width: 200px;
+}
+form{
+    grid-column: 2/5;
+    display: flex;
+    justify-content: space-around;
+}
+.versus{
+    grid-column: 3;
+    font-size: 40px;
+}
+.play{
+    grid-column: 3;
+    width: fit-content;
+    padding: 5px;
+    background-color: black;
+    border-radius:5px;
+    color: white;
+}
