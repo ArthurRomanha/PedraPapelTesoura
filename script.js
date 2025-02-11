@@ -1,25 +1,24 @@
 let escolhaRobo;
 const minhaEscolha = () => {
     let myChoice = document.querySelector('input[name="elemento"]:checked');
-    console.log(myChoice.value);
+    console.log("Eu"+myChoice.value);
     
 }
 const sorteiaEscolhaRobo = () => {
     let num = Math.floor(Math.random()*3);
-    console.log(num);
     
     switch (num) {
         case 0:
             escolhaRobo = "pedra";
-            console.log(escolhaRobo);
+            console.log("Robô"+escolhaRobo);
             break;
         case 1:
             escolhaRobo = "papel";
-            console.log(escolhaRobo);
+            console.log("Robô"+escolhaRobo);
             break;
         case 2:
             escolhaRobo = "tesoura";
-            console.log(escolhaRobo);
+            console.log("Robô"+escolhaRobo);
             break;
     }
 }
