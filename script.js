@@ -1,7 +1,7 @@
 let escolhaRobo;
 const minhaEscolha = () => {
     let myChoice = document.querySelector('input[name="elemento"]:checked');
-    console.log("Eu"+myChoice.value);
+    console.log("Eu "+myChoice.value);
     
 }
 const sorteiaEscolhaRobo = () => {
@@ -10,27 +10,26 @@ const sorteiaEscolhaRobo = () => {
     switch (num) {
         case 0:
             escolhaRobo = "pedra";
-            console.log("Robô"+escolhaRobo);
+            console.log("Robô "+escolhaRobo);
             break;
         case 1:
             escolhaRobo = "papel";
-            console.log("Robô"+escolhaRobo);
+            console.log("Robô "+escolhaRobo);
             break;
         case 2:
             escolhaRobo = "tesoura";
-            console.log("Robô"+escolhaRobo);
+            console.log("Robô "+escolhaRobo);
             break;
     }
 }
 const verificaVitória = (resultado) => {
-    if((minhaEscolha == "papel" && escolhaRobo == "pedra")||(minhaEscolha == "tesoura" && escolhaRobo == "papel")||(minhaEscolha == "pedra" && escolhaRobo == "tesoura")){
+    if((minhaEscolha === "papel" && escolhaRobo === "pedra")||(minhaEscolha === "tesoura" && escolhaRobo === "papel")||(minhaEscolha === "pedra" && escolhaRobo === "tesoura")){
         resultado = "vitória";
         console.log(resultado);
-    }else if((escolhaRobo == "papel" && minhaEscolha == "pedra")||(escolhaRobo == "tesoura" && minhaEscolha == "papel")||(escolhaRobo == "pedra" && minhaEscolha == "tesoura")){
+    }else if((escolhaRobo === "papel" && minhaEscolha === "pedra")||(escolhaRobo === "tesoura" && minhaEscolha === "papel")||(escolhaRobo === "pedra" && minhaEscolha == "tesoura")){
         resultado = "derrota";
         console.log(resultado);
-    }
-    else{
+    }else{
         resultado = "empate";        
         console.log(resultado);
     }
