@@ -1,5 +1,5 @@
 let escolhaRobo;
-const minhaEscolha = (myChoice) => {
+const functionMinhaEscolha = (myChoice) => {
     myChoice = document.querySelector('input[name="elemento"]:checked');
     console.log("Eu "+myChoice.value);
     return myChoice.value;
@@ -37,7 +37,7 @@ const verificaVitória = (minhaEscolha, escolhaRobo) => {
     }
 }
 const start = () => {
-    let minhaEscolha = minhaEscolha()
+    let minhaEscolha = functionMinhaEscolha();
     let escolhaRobo = sorteiaEscolhaRobo();
     let resultado = "";
     verificaVitória(minhaEscolha, escolhaRobo);
