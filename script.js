@@ -24,13 +24,17 @@ const sorteiaEscolhaRobo = () => {
     }
 }
 const verificaVitória = () => {
-    let ganhou;
+    let resultado; 
     if((minhaEscolha == "papel" && escolhaRobo == "pedra")||(minhaEscolha == "tesoura" && escolhaRobo == "papel")||(minhaEscolha == "pedra" && escolhaRobo == "tesoura")){
-        ganhou=true;
-        return ganhou;
-    }else{
-        ganhou=false;
-        return ganhou;
+        resultado = "vitória";
+        return resultado; 
+    }else if((escolhaRobo == "papel" && minhaEscolha == "pedra")||(escolhaRobo == "tesoura" && minhaEscolha == "papel")||(escolhaRobo == "pedra" && minhaEscolha == "tesoura")){
+        resultado = "derrota";
+        return resultado; 
+    }
+    else{
+        resultado = "empate";
+        return resultado; 
     }
 }
 const start = () => {
