@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissors</title>
-</head>
+  </head>
 
-<body>
-    <div class="player"><img src="img/user.png" alt="user image"><h2>Adversário</h2></div>
-    <div class="escolhaRobo escolha"></div>
+  <body>
+    <div class="player">
+      <img src="img/user.png" alt="user image" />
+      <h2>Adversário</h2>
+    </div>
+    <div class="escolhaRobo escolha">
+      <img src="img/" alt="" class="imgEscolhaRobo" />
+    </div>
     <div class="versus">VS</div>
 
     <form class="minhaEscolha">
-        <div><input type="radio" class="pedra" name="elemento" value="pedra"><label for="pedra">Rock</label></div>
-        <div><input type="radio" class="papel" name="elemento" value="papel"><label for="papel">Paper</label></div>
-        <div><input type="radio" class="tesoura" name="elemento" value="tesoura"><label for="tesoura">Scissor</label></div>
+      <div>
+        <input type="radio" class="pedra" name="elemento" value="pedra" /><label
+          for="pedra"
+          >Rock</label
+        >
+      </div>
+      <div>
+        <input type="radio" class="papel" name="elemento" value="papel" /><label
+          for="papel"
+          >Paper</label
+        >
+      </div>
+      <div>
+        <input
+          type="radio"
+          class="tesoura"
+          name="elemento"
+          value="tesoura"
+        /><label for="tesoura">Scissor</label>
+      </div>
     </form>
-    <div class="player"><img src="img/user.png" alt="user image"><h2>Eu</h2></div>
-    <hr>
+    <div class="player">
+      <img src="img/user.png" alt="user image" />
+      <h2>Eu</h2>
+    </div>
+    <hr />
     <button onclick="start()" class="play">Jogar</button>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
