@@ -37,10 +37,5 @@ const start = () => {
     minhaEscolha()
     sorteiaEscolhaRobo();
     let resultado = verificaVitória();
-    if (resultado) {
-        console.log("ganhou");
-    }else{
-        console.log("perdeu");
-        
-    }
+        console.log(resultado);
 }
