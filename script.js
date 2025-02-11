@@ -26,14 +26,14 @@ const sorteiaEscolhaRobo = () => {
 const verificaVitória = (resultado) => {
     if((minhaEscolha == "papel" && escolhaRobo == "pedra")||(minhaEscolha == "tesoura" && escolhaRobo == "papel")||(minhaEscolha == "pedra" && escolhaRobo == "tesoura")){
         resultado = "vitória";
-        return resultado; 
+        console.log(resultado);
     }else if((escolhaRobo == "papel" && minhaEscolha == "pedra")||(escolhaRobo == "tesoura" && minhaEscolha == "papel")||(escolhaRobo == "pedra" && minhaEscolha == "tesoura")){
         resultado = "derrota";
-        return resultado; 
+        console.log(resultado);
     }
     else{
-        resultado = "empate";
-        return resultado; 
+        resultado = "empate";        
+        console.log(resultado);
     }
 }
 const start = () => {
@@ -41,5 +41,4 @@ const start = () => {
     sorteiaEscolhaRobo();
     let resultado = "";
     verificaVitória(resultado);
-        console.log(resultado);
 }
