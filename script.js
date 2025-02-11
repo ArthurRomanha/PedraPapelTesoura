@@ -23,8 +23,7 @@ const sorteiaEscolhaRobo = () => {
             break;
     }
 }
-const verificaVitória = () => {
-    let resultado; 
+const verificaVitória = (resultado) => {
     if((minhaEscolha == "papel" && escolhaRobo == "pedra")||(minhaEscolha == "tesoura" && escolhaRobo == "papel")||(minhaEscolha == "pedra" && escolhaRobo == "tesoura")){
         resultado = "vitória";
         return resultado; 
@@ -40,6 +39,7 @@ const verificaVitória = () => {
 const start = () => {
     minhaEscolha()
     sorteiaEscolhaRobo();
-    let resultado = verificaVitória();
+    let resultado = "";
+    verificaVitória(resultado);
         console.log(resultado);
 }
