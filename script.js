@@ -1,8 +1,8 @@
 let escolhaRobo;
-const minhaEscolha = () => {
-    let myChoice = document.querySelector('input[name="elemento"]:checked');
+const minhaEscolha = (myChoice) => {
+    myChoice = document.querySelector('input[name="elemento"]:checked');
     console.log("Eu "+myChoice.value);
-    
+    return myChoice.value;
 }
 const sorteiaEscolhaRobo = () => {
     let num = Math.floor(Math.random()*3);
@@ -21,8 +21,10 @@ const sorteiaEscolhaRobo = () => {
             console.log("Robô "+escolhaRobo);
             break;
     }
+    return escolhaRobo;
 }
-const verificaVitória = (resultado) => {
+const verificaVitória = (minhaEscolha, escolhaRobo) => {
+    let resultado;
     if((minhaEscolha === "papel" && escolhaRobo === "pedra")||(minhaEscolha === "tesoura" && escolhaRobo === "papel")||(minhaEscolha === "pedra" && escolhaRobo === "tesoura")){
         resultado = "vitória";
         console.log(resultado);
@@ -35,8 +37,8 @@ const verificaVitória = (resultado) => {
     }
 }
 const start = () => {
-    minhaEscolha()
-    sorteiaEscolhaRobo();
+    let minhaEscolha = minhaEscolha()
+    let escolhaRobo = sorteiaEscolhaRobo();
     let resultado = "";
-    verificaVitória(resultado);
+    verificaVitória(minhaEscolha, escolhaRobo);
 }
