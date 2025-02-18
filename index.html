@@ -10,18 +10,32 @@
 </head>
 
 <body>
-    <div class="player"><img src="img/user.png" alt="user image"><h2>Adversário</h2></div>
-    <div class="escolhaRobo escolha"></div>
+    <div class="player">
+        <div><img src="img/user.png" alt="user image">
+            <h2>Adversário</h2>
+        </div>
+    </div>
+    <div class="escolha" id="escolhaRobo"></div>
     <div class="versus">VS</div>
 
     <form class="minhaEscolha">
-        <div><input type="radio" class="pedra" name="elemento" value="pedra"><label for="pedra">Rock</label></div>
-        <div><input type="radio" class="papel" name="elemento" value="papel"><label for="papel">Paper</label></div>
-        <div><input type="radio" class="tesoura" name="elemento" value="tesoura"><label for="tesoura">Scissor</label></div>
+        <div><input type="radio" class="pedra" name="elemento" value="pedra"><img src="img/pedra.png"
+                    alt="pedra" draggable="false"></div>
+        <div><input type="radio" class="papel" name="elemento" value="papel"><img src="img/papel.png"
+                    alt="papel" draggable="false"></div>
+        <div><input type="radio" class="tesoura" name="elemento" value="tesoura"><img
+                    src="img/tesoura.png" alt="tesoura" draggable="false"></div>
     </form>
-    <div class="player"><img src="img/user.png" alt="user image"><h2>Eu</h2></div>
+    <div class="player">
+        <div><img src="img/user.png" alt="user image">
+            <h2>Eu</h2>
+        </div>
+    </div>
     <hr>
-    <button onclick="start()" class="play">Jogar</button>
+    <div class="player">
+        <button onclick="start()" class="play">Jogar</button>
+    </div>
+    <div class="player"><h1 class="resultado" id="resultado"></h1></div>
     <script src="script.js"></script>
 </body>
 
